@@ -150,3 +150,19 @@ WHERE UsuTrabajador = @Usuario
 GO
 
 exec sp_ValidarUsuario 'FLLAJA','987650'
+
+--------------------------------------------
+-----------------------------------------------
+create proc sp_TipoUSer(
+	@Usuario VARCHAR(30)
+	,@ClaveAcceso VARCHAR(30)
+	)
+as 
+select 
+
+TipoUsuTrabajador as TipoUsuario from Trabajador  WHERE UsuTrabajador = @Usuario
+	AND PassTrabajador = @ClaveAcceso
+go
+
+
+exec sp_TipoUSer'jramos','jramos123'
