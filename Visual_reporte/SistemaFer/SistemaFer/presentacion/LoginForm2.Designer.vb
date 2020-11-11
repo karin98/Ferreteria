@@ -30,7 +30,6 @@ Partial Class LoginForm2
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         Me.UsernameLabel = New System.Windows.Forms.Label()
         Me.PasswordLabel = New System.Windows.Forms.Label()
         Me.Textuser = New System.Windows.Forms.TextBox()
@@ -38,18 +37,9 @@ Partial Class LoginForm2
         Me.OK = New System.Windows.Forms.Button()
         Me.Cancel = New System.Windows.Forms.Button()
         Me.TxtTipoUser = New System.Windows.Forms.TextBox()
+        Me.LogoPictureBox = New System.Windows.Forms.PictureBox()
         CType(Me.LogoPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'LogoPictureBox
-        '
-        Me.LogoPictureBox.Image = Global.SistemaFer.My.Resources.Resources.descarga
-        Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
-        Me.LogoPictureBox.Name = "LogoPictureBox"
-        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 193)
-        Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.LogoPictureBox.TabIndex = 0
-        Me.LogoPictureBox.TabStop = False
         '
         'UsernameLabel
         '
@@ -107,10 +97,21 @@ Partial Class LoginForm2
         '
         'TxtTipoUser
         '
+        Me.TxtTipoUser.Enabled = False
         Me.TxtTipoUser.Location = New System.Drawing.Point(220, 127)
         Me.TxtTipoUser.Name = "TxtTipoUser"
         Me.TxtTipoUser.Size = New System.Drawing.Size(144, 20)
         Me.TxtTipoUser.TabIndex = 6
+        '
+        'LogoPictureBox
+        '
+        Me.LogoPictureBox.Image = Global.SistemaFer.My.Resources.Resources.descarga
+        Me.LogoPictureBox.Location = New System.Drawing.Point(0, 0)
+        Me.LogoPictureBox.Name = "LogoPictureBox"
+        Me.LogoPictureBox.Size = New System.Drawing.Size(165, 193)
+        Me.LogoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.LogoPictureBox.TabIndex = 0
+        Me.LogoPictureBox.TabStop = False
         '
         'LoginForm2
         '

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmCliente
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmCliente
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -47,8 +47,6 @@ Partial Class frmCliente
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.ErrorIcono = New System.Windows.Forms.ErrorProvider(Me.components)
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Textemail = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -57,8 +55,6 @@ Partial Class frmCliente
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Textemail)
-        Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.textcel)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.textDni)
@@ -84,7 +80,7 @@ Partial Class frmCliente
         '
         'textcel
         '
-        Me.textcel.Location = New System.Drawing.Point(353, 33)
+        Me.textcel.Location = New System.Drawing.Point(96, 66)
         Me.textcel.Name = "textcel"
         Me.textcel.Size = New System.Drawing.Size(172, 21)
         Me.textcel.TabIndex = 20
@@ -93,7 +89,7 @@ Partial Class frmCliente
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(291, 33)
+        Me.Label1.Location = New System.Drawing.Point(34, 66)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 19)
         Me.Label1.TabIndex = 19
@@ -101,7 +97,7 @@ Partial Class frmCliente
         '
         'textDni
         '
-        Me.textDni.Location = New System.Drawing.Point(585, 35)
+        Me.textDni.Location = New System.Drawing.Point(314, 67)
         Me.textDni.Name = "textDni"
         Me.textDni.Size = New System.Drawing.Size(131, 21)
         Me.textDni.TabIndex = 18
@@ -110,7 +106,7 @@ Partial Class frmCliente
         '
         Me.correo.AutoSize = True
         Me.correo.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.correo.Location = New System.Drawing.Point(552, 36)
+        Me.correo.Location = New System.Drawing.Point(274, 70)
         Me.correo.Name = "correo"
         Me.correo.Size = New System.Drawing.Size(37, 19)
         Me.correo.TabIndex = 17
@@ -122,7 +118,7 @@ Partial Class frmCliente
         Me.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncancelar.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btncancelar.Image = Global.SistemaFer.My.Resources.Resources.cancel
-        Me.btncancelar.Location = New System.Drawing.Point(518, 146)
+        Me.btncancelar.Location = New System.Drawing.Point(569, 33)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(71, 41)
         Me.btncancelar.TabIndex = 16
@@ -134,7 +130,7 @@ Partial Class frmCliente
         Me.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btneditar.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btneditar.Image = Global.SistemaFer.My.Resources.Resources.edit
-        Me.btneditar.Location = New System.Drawing.Point(424, 146)
+        Me.btneditar.Location = New System.Drawing.Point(569, 125)
         Me.btneditar.Name = "btneditar"
         Me.btneditar.Size = New System.Drawing.Size(75, 41)
         Me.btneditar.TabIndex = 15
@@ -146,7 +142,7 @@ Partial Class frmCliente
         Me.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnguardar.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnguardar.Image = Global.SistemaFer.My.Resources.Resources.save
-        Me.btnguardar.Location = New System.Drawing.Point(336, 146)
+        Me.btnguardar.Location = New System.Drawing.Point(569, 83)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Size = New System.Drawing.Size(74, 41)
         Me.btnguardar.TabIndex = 14
@@ -154,7 +150,7 @@ Partial Class frmCliente
         '
         'txtdireccion
         '
-        Me.txtdireccion.Location = New System.Drawing.Point(97, 61)
+        Me.txtdireccion.Location = New System.Drawing.Point(97, 154)
         Me.txtdireccion.Multiline = True
         Me.txtdireccion.Name = "txtdireccion"
         Me.txtdireccion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -163,16 +159,16 @@ Partial Class frmCliente
         '
         'txtapellido
         '
-        Me.txtapellido.Location = New System.Drawing.Point(361, 104)
+        Me.txtapellido.Location = New System.Drawing.Point(97, 123)
         Me.txtapellido.Name = "txtapellido"
-        Me.txtapellido.Size = New System.Drawing.Size(181, 21)
+        Me.txtapellido.Size = New System.Drawing.Size(171, 21)
         Me.txtapellido.TabIndex = 9
         '
         'txtnombres
         '
-        Me.txtnombres.Location = New System.Drawing.Point(97, 102)
+        Me.txtnombres.Location = New System.Drawing.Point(96, 93)
         Me.txtnombres.Name = "txtnombres"
-        Me.txtnombres.Size = New System.Drawing.Size(184, 21)
+        Me.txtnombres.Size = New System.Drawing.Size(172, 21)
         Me.txtnombres.TabIndex = 8
         '
         'txtcodigo
@@ -196,7 +192,7 @@ Partial Class frmCliente
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(291, 104)
+        Me.Label4.Location = New System.Drawing.Point(12, 125)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(76, 19)
         Me.Label4.TabIndex = 4
@@ -206,7 +202,7 @@ Partial Class frmCliente
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(16, 62)
+        Me.Label5.Location = New System.Drawing.Point(16, 155)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(75, 19)
         Me.Label5.TabIndex = 5
@@ -216,7 +212,7 @@ Partial Class frmCliente
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(16, 102)
+        Me.Label3.Location = New System.Drawing.Point(19, 96)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(72, 19)
         Me.Label3.TabIndex = 3
@@ -302,22 +298,6 @@ Partial Class frmCliente
         '
         Me.ErrorIcono.ContainerControl = Me
         '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(36, 137)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(48, 15)
-        Me.Label7.TabIndex = 21
-        Me.Label7.Text = "Email:"
-        '
-        'Textemail
-        '
-        Me.Textemail.Location = New System.Drawing.Point(97, 134)
-        Me.Textemail.Name = "Textemail"
-        Me.Textemail.Size = New System.Drawing.Size(196, 21)
-        Me.Textemail.TabIndex = 22
-        '
         'frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -363,6 +343,4 @@ Partial Class frmCliente
     Friend WithEvents Label1 As Label
     Friend WithEvents Textflag As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Textemail As TextBox
-    Friend WithEvents Label7 As Label
 End Class

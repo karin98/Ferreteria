@@ -102,3 +102,7 @@ INNER JOIN Categoria ON producto.CodCategoria = categoria.CodCategoria
 WHERE NombreProducto  LIKE @Nombre + '%'
 
 exec BuscarProducto'PINTURA AZUL'
+
+-------------------------------------------
+--exec EditarProducto 'E01','10','Escalera 3 pasos',120,'Home collection',20,20
+exec EditarProducto 'E01','Escalera 3 pasos',120,'Home collection',20,20

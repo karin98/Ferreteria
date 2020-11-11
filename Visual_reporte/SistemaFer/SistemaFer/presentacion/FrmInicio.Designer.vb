@@ -32,6 +32,7 @@ Partial Class FrmInicio
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -41,6 +42,7 @@ Partial Class FrmInicio
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gold
+        Me.Panel1.Controls.Add(Me.back)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -170,6 +172,15 @@ Partial Class FrmInicio
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'back
+        '
+        Me.back.Location = New System.Drawing.Point(554, 24)
+        Me.back.Name = "back"
+        Me.back.Size = New System.Drawing.Size(75, 23)
+        Me.back.TabIndex = 1
+        Me.back.Text = "Salir"
+        Me.back.UseVisualStyleBackColor = True
+        '
         'FrmInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -200,4 +211,5 @@ Partial Class FrmInicio
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents back As Button
 End Class

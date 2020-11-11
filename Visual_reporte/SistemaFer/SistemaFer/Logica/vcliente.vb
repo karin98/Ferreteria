@@ -4,7 +4,7 @@ Public Class vcliente
 
 
 
-    Dim CodC, NombreC, ApellidosC, DireccionC, CelC, DniC, EmailC As String
+    Dim CodC, NombreC, ApellidosC, DireccionC, CelC, DniC As String
 
     ''METODO SETTER / GET
 
@@ -67,14 +67,6 @@ Public Class vcliente
         End Set
     End Property
 
-    Public Property gEmailC
-        Get
-            Return EmailC
-        End Get
-        Set(value)
-            EmailC = value
-        End Set
-    End Property
 
 
     Public Sub New()
@@ -82,7 +74,7 @@ Public Class vcliente
     End Sub
 
     Public Sub New(ByVal CodC As String, ByVal NombreC As String, ByVal ApellidosC As String,
-      ByVal DireccionC As String, ByVal CelC As String, ByVal DniC As String, ByVal EmailC As String)
+      ByVal DireccionC As String, ByVal CelC As String, ByVal DniC As String)
 
         gCodC = CodC
         gNombreC = NombreC
@@ -90,8 +82,6 @@ Public Class vcliente
         gDireccionC = DireccionC
         gCelC = CelC
         gDniC = DniC
-        gEmailC = EmailC
-
 
     End Sub
 

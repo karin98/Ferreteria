@@ -7,7 +7,9 @@ Public Class fTrabajador
 
     Dim cmd As New SqlCommand 'PARA ENVIAR PETICIONES
 
-    Public Function consultarTipoUser(ByVal dts As vTrabajador)
+    Public Function consultarTipoUser(ByVal dts As vTrabajador) As String
+        Dim resultado As String
+
         Try
             conectado()
             cmd = New SqlCommand("sp_TipoUSer")
@@ -16,19 +18,22 @@ Public Class fTrabajador
             cmd.Parameters.AddWithValue("@Usuario", dts.Usuario1)
             cmd.Parameters.AddWithValue("@ClaveAcceso", dts.Pass1)
 
-            Dim dr As SqlDataReader
-            dr = cmd.ExecuteReader
-
-
-            If dr.HasRows Then
-                Return True
+            Dim respuesta As SqlDataReader
+            respuesta = cmd.ExecuteReader
+            If respuesta.HasRows Then
+                While (respuesta.Read())
+                    resultado = respuesta.GetString(0)
+                End While
+                Return resultado
             Else
-                Return False
-
+                Return ""
             End If
+
+            respuesta.Close()
+
         Catch ex As Exception
             MsgBox(ex.Message)
-            Return False
+            Return ""
         Finally
             desconectado()
 
@@ -63,7 +68,9 @@ Public Class fTrabajador
         End Try
     End Function
 
-
+    Friend Function consultarTipoUser() As Boolean
+        Throw New NotImplementedException()
+    End Function
 
     Public Function insertar(ByVal dts As vTrabajador) As Boolean
         Try

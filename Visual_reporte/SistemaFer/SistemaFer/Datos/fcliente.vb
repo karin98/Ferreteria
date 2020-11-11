@@ -39,7 +39,6 @@ Public Class fcliente
             cmd.Parameters.AddWithValue("@DireccionC", dts.gDireccionC)
             cmd.Parameters.AddWithValue("@CelC", dts.gCelC)
             cmd.Parameters.AddWithValue("@Dni", dts.gDniC)
-            cmd.Parameters.AddWithValue("@Email", dts.gEmailC)
 
 
             If cmd.ExecuteNonQuery Then
@@ -71,7 +70,6 @@ Public Class fcliente
             cmd.Parameters.AddWithValue("@ApellidosC", dts.gApellidosC)
             cmd.Parameters.AddWithValue("@DireccionC", dts.gDireccionC)
             cmd.Parameters.AddWithValue("@CelC", dts.gCelC)
-            cmd.Parameters.AddWithValue("@Email", dts.gEmailC)
 
 
             If cmd.ExecuteNonQuery Then

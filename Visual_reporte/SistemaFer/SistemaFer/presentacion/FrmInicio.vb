@@ -5,7 +5,9 @@
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        frmventas.Show()
+        ' frmventas.Show()
+        frmDetalleVenta.Show()
+
 
     End Sub
 
@@ -25,7 +27,14 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        FrmReporteVenta.Show()
+        ' FrmReporteVenta.Show()
+
+    End Sub
+
+    Private Sub back_Click(sender As Object, e As EventArgs) Handles back.Click
+        Me.Hide()
+
+        LoginForm2.Show()
 
     End Sub
 End Class

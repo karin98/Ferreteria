@@ -2,7 +2,9 @@
 Imports System.ComponentModel
 
 
+
 Public Class LoginForm2
+
 
     ' TODO: inserte el código para realizar autenticación personalizada usando el nombre de usuario y la contraseña proporcionada 
     ' (Consulte http://go.microsoft.com/fwlink/?LinkId=35339).  
@@ -21,22 +23,39 @@ Public Class LoginForm2
                 Dim TP As New vTrabajador
                 Dim funct As New fTrabajador
 
+                dts.Tipousu1 = TxtTipoUser.Text
 
                 dts.Usuario1 = Textuser.Text
                 dts.Pass1 = textPass.Text
                 If func.ValidarUsuario(dts) = True Then
-                    MessageBox.Show("Bienvenido ", " ", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    Me.Hide()
+                    Dim res As String
+                    res = funct.consultarTipoUser(dts)
+                    If Not res = "" Then
+                        TxtTipoUser.Text = res
 
-                    frmCliente.Show()
+
+                        If res = "ADMINISTRADOR" Then
+                            MessageBox.Show("Bienvenido ", " ", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            Me.Hide()
+                            FrmInicio.Show()
+
+                        Else
+                            MessageBox.Show("Bienvenido ", " ", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                            Me.Hide()
+                            FrmInicio.Show()
+                            FrmInicio.Button3.Enabled = False
+                            FrmInicio.Button2.Enabled = False
+                            FrmInicio.Button6.Enabled = False
+
+                        End If
+                    End If
+
+                Else
+                    MessageBox.Show("Contraseña o Usuario incorrecto", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Textuser.Clear()
+                    textPass.Clear()
 
                 End If
-                FrmInicio.Show()
-            Else
-                MessageBox.Show("Contraseña o Usuario incorrecto", "", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Textuser.Clear()
-                textPass.Clear()
-
             End If
 
 
@@ -52,16 +71,9 @@ Public Class LoginForm2
         Me.Close()
     End Sub
 
-    Private Sub LoginForm2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
-    End Sub
-
-    Private Sub TxtTipoUser_TextChanged(sender As Object, e As EventArgs) Handles TxtTipoUser.TextChanged
 
 
 
-    End Sub
 
 
 End Class

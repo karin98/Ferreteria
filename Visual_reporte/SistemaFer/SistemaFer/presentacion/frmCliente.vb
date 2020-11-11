@@ -77,8 +77,6 @@ Public Class frmCliente
             dts.gDireccionC = txtdireccion.Text
             dts.gCelC = textcel.Text
             dts.gDniC = textDni.Text
-            dts.gEmailC = Textemail.Text
-
             If func.insertar(dts) Then
                 MessageBox.Show("cliente registrado", "guardando registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 mostrar()
@@ -112,7 +110,7 @@ Public Class frmCliente
                 dts.gApellidosC = txtapellido.Text
                 dts.gDireccionC = txtdireccion.Text
                 dts.gCelC = textcel.Text
-                dts.gEmailC = Textemail.Text
+
                 If fun.editar(dts) Then
                     MessageBox.Show("cliente modificado", "modificando registros", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     mostrar()
@@ -166,7 +164,7 @@ Public Class frmCliente
         txtdireccion.Text = datalistado.SelectedCells.Item(3).Value
         textcel.Text = datalistado.SelectedCells.Item(4).Value
         textDni.Text = datalistado.SelectedCells.Item(5).Value
-        Textemail.Text = datalistado.SelectedCells.Item(6).Value
+
         btneditar.Visible = True
         txtcodigo.Enabled = False
         textDni.Enabled = False
