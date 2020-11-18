@@ -47,6 +47,7 @@ Partial Class frmCliente
         Me.datalistado = New System.Windows.Forms.DataGridView()
         Me.txtbuscar = New System.Windows.Forms.TextBox()
         Me.ErrorIcono = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.btnclean = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         CType(Me.datalistado, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,7 +119,7 @@ Partial Class frmCliente
         Me.btncancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btncancelar.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btncancelar.Image = Global.SistemaFer.My.Resources.Resources.cancel
-        Me.btncancelar.Location = New System.Drawing.Point(569, 33)
+        Me.btncancelar.Location = New System.Drawing.Point(569, 23)
         Me.btncancelar.Name = "btncancelar"
         Me.btncancelar.Size = New System.Drawing.Size(71, 41)
         Me.btncancelar.TabIndex = 16
@@ -130,7 +131,7 @@ Partial Class frmCliente
         Me.btneditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btneditar.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btneditar.Image = Global.SistemaFer.My.Resources.Resources.edit
-        Me.btneditar.Location = New System.Drawing.Point(569, 125)
+        Me.btneditar.Location = New System.Drawing.Point(569, 113)
         Me.btneditar.Name = "btneditar"
         Me.btneditar.Size = New System.Drawing.Size(75, 41)
         Me.btneditar.TabIndex = 15
@@ -142,7 +143,7 @@ Partial Class frmCliente
         Me.btnguardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnguardar.Font = New System.Drawing.Font("Sitka Text", 9.749999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnguardar.Image = Global.SistemaFer.My.Resources.Resources.save
-        Me.btnguardar.Location = New System.Drawing.Point(569, 83)
+        Me.btnguardar.Location = New System.Drawing.Point(569, 66)
         Me.btnguardar.Name = "btnguardar"
         Me.btnguardar.Size = New System.Drawing.Size(74, 41)
         Me.btnguardar.TabIndex = 14
@@ -220,7 +221,7 @@ Partial Class frmCliente
         '
         'Textflag
         '
-        Me.Textflag.Location = New System.Drawing.Point(602, 20)
+        Me.Textflag.Location = New System.Drawing.Point(665, 20)
         Me.Textflag.Name = "Textflag"
         Me.Textflag.Size = New System.Drawing.Size(38, 21)
         Me.Textflag.TabIndex = 21
@@ -229,6 +230,7 @@ Partial Class frmCliente
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnclean)
         Me.GroupBox2.Controls.Add(Me.Textflag)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.inexistente)
@@ -298,6 +300,15 @@ Partial Class frmCliente
         '
         Me.ErrorIcono.ContainerControl = Me
         '
+        'btnclean
+        '
+        Me.btnclean.BackgroundImage = Global.SistemaFer.My.Resources.Resources._new
+        Me.btnclean.Location = New System.Drawing.Point(548, 20)
+        Me.btnclean.Name = "btnclean"
+        Me.btnclean.Size = New System.Drawing.Size(34, 36)
+        Me.btnclean.TabIndex = 22
+        Me.btnclean.UseVisualStyleBackColor = True
+        '
         'frmCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -343,4 +354,5 @@ Partial Class frmCliente
     Friend WithEvents Label1 As Label
     Friend WithEvents Textflag As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents btnclean As Button
 End Class

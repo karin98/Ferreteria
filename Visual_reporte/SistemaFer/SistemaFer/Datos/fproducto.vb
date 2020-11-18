@@ -70,7 +70,7 @@ Public Class fproducto
             cmd.CommandType = CommandType.StoredProcedure
             cmd.Connection = cnn
 
-            ' cmd.Parameters.AddWithValue("@CodProd", dts.codprod1)
+            cmd.Parameters.AddWithValue("@CodProd", dts.codprod1)
             cmd.Parameters.AddWithValue("@NomProd", dts.NombreProd1)
             cmd.Parameters.AddWithValue("@PrecioProd", dts.PrecioProd1)
             cmd.Parameters.AddWithValue("@MarcaProd", dts.MarcaProd1)

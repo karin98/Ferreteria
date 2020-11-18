@@ -103,7 +103,7 @@ GO
 
 CREATE PROC MostrarDetalleVenta2
 as
-SELECT       dbo.DetalleVenta.CodDetalleVenta  ,dbo.DetalleVenta.CodVenta, dbo.DetalleVenta.CodProducto, dbo.Producto.NombreProducto, dbo.DetalleVenta.CantidadDetalleVent, dbo.Producto.PrecioProducto
+SELECT       dbo.DetalleVenta.CodDetalleVenta  ,dbo.DetalleVenta.CodVenta, dbo.DetalleVenta.CodProducto, dbo.Producto.NombreProducto, dbo.DetalleVenta.CantidadDetalleVent, dbo.Producto.PrecioProducto, dbo.DetalleVenta.CantidadDetalleVent * dbo.Producto.PrecioProducto as Total
 FROM            dbo.DetalleVenta INNER JOIN
                          dbo.Producto ON dbo.DetalleVenta.CodProducto = dbo.Producto.CodProducto
 order by CodVenta
@@ -144,3 +144,49 @@ FROM            dbo.Venta INNER JOIN
                          dbo.Trabajador ON dbo.Venta.CodTrabajador = dbo.Trabajador.CodTrabajador INNER JOIN
                          dbo.Cliente ON dbo.Venta.CodCliente = dbo.Cliente.CodCliente
 WHERE dbo.Venta.CodVenta  LIKE @cod+ '%' 
+
+---------------------------------------------------- Generar comprobante
+
+create proc generar_comprobante
+@idventa varchar (20)
+as 
+SELECT        dbo.Venta.CodVenta, dbo.Cliente.NombreCliente, dbo.Cliente.ApellidosCliente, dbo.Cliente.DniCLiente, dbo.Producto.NombreProducto, dbo.Producto.PrecioProducto, dbo.DetalleVenta.CantidadDetalleVent, 
+                         dbo.Producto.PrecioProducto * dbo.DetalleVenta.CantidadDetalleVent AS Total_Parcial, dbo.Trabajador.CodTrabajador, dbo.Trabajador.NombreTrabajador,dbo.Venta.FechaVenta, dbo.Venta.NumDocumento
+FROM            dbo.Producto INNER JOIN
+                         dbo.DetalleVenta ON dbo.Producto.CodProducto = dbo.DetalleVenta.CodProducto INNER JOIN
+                         dbo.Venta ON dbo.DetalleVenta.CodVenta = dbo.Venta.CodVenta INNER JOIN
+                         dbo.Cliente ON dbo.Venta.CodCliente = dbo.Cliente.CodCliente INNER JOIN
+                         dbo.Trabajador ON dbo.Venta.CodTrabajador = dbo.Trabajador.CodTrabajador
+
+					where	  dbo.Venta.CodVenta= @idventa
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

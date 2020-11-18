@@ -148,7 +148,10 @@
     End Sub
 
     Private Sub BtnImprimir_Click(sender As Object, e As EventArgs) Handles BtnImprimir.Click
-        FrmReporteVenta.Show()
+        'FrmReporteVenta.Show()
+        frmComprobantePago.textIdventa.Text = Me.textcodigoVenta.Text
+        frmComprobantePago.ShowDialog()
+
 
     End Sub
 End Class

@@ -23,6 +23,7 @@ Partial Class FrmInicio
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.back = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
@@ -32,7 +33,6 @@ Partial Class FrmInicio
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.back = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -41,14 +41,25 @@ Partial Class FrmInicio
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.Gold
-        Me.Panel1.Controls.Add(Me.back)
+        Me.Panel1.BackColor = System.Drawing.Color.Cornsilk
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(650, 62)
         Me.Panel1.TabIndex = 6
+        '
+        'back
+        '
+        Me.back.BackColor = System.Drawing.Color.CornflowerBlue
+        Me.back.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.back.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.back.Location = New System.Drawing.Point(563, 68)
+        Me.back.Name = "back"
+        Me.back.Size = New System.Drawing.Size(75, 23)
+        Me.back.TabIndex = 1
+        Me.back.Text = "Salir"
+        Me.back.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -172,21 +183,13 @@ Partial Class FrmInicio
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'back
-        '
-        Me.back.Location = New System.Drawing.Point(554, 24)
-        Me.back.Name = "back"
-        Me.back.Size = New System.Drawing.Size(75, 23)
-        Me.back.TabIndex = 1
-        Me.back.Text = "Salir"
-        Me.back.UseVisualStyleBackColor = True
-        '
         'FrmInicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumSpringGreen
+        Me.BackColor = System.Drawing.Color.CornflowerBlue
         Me.ClientSize = New System.Drawing.Size(650, 332)
+        Me.Controls.Add(Me.back)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)

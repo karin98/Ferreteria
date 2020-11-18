@@ -102,187 +102,452 @@ SistemaFer
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet">
+<member name="T:SistemaFer.FerreteriasDataSet2">
 <summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.CategoriaDataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.CategoriaDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.ClienteDataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.ClienteDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.DetalleVentaDataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.DetalleVentaDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.ProductoDataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.ProductoDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.TrabajadorDataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.TrabajadorDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.VentaDataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.VentaDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.BuscarDetalleVenta4DataTable">
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarCatDataTable">
 <summary>
 Represents the strongly named DataTable class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.CategoriaRow">
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarTrabajadorDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarVentaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.generar_comprobanteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarCatDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarDetalleVenta2DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarVentaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.sp_TipoUSerDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.sp_ValidarUsuarioDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.TrabajadorMostrarDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.CategoriaRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.ClienteRow">
+<member name="T:SistemaFer.FerreteriasDataSet2.ClienteRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.DetalleVentaRow">
+<member name="T:SistemaFer.FerreteriasDataSet2.DetalleVentaRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.ProductoRow">
+<member name="T:SistemaFer.FerreteriasDataSet2.ProductoRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.TrabajadorRow">
+<member name="T:SistemaFer.FerreteriasDataSet2.TrabajadorRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.VentaRow">
+<member name="T:SistemaFer.FerreteriasDataSet2.VentaRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.BuscarDetalleVenta4Row">
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarCatRow">
 <summary>
 Represents strongly named DataRow class.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.CategoriaRowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarTrabajadorRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarVentaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.generar_comprobanteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarCatRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarDetalleVenta2Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarVentaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.sp_TipoUSerRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.sp_ValidarUsuarioRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.TrabajadorMostrarRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.CategoriaRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.ClienteRowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.ClienteRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.DetalleVentaRowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.DetalleVentaRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.ProductoRowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.ProductoRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.TrabajadorRowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.TrabajadorRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.VentaRowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.VentaRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSet.BuscarDetalleVenta4RowChangeEvent">
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarCatRowChangeEvent">
 <summary>
 Row event argument class
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.CategoriaTableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarTrabajadorRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.BuscarVentaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.generar_comprobanteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarCatRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarDetalleVenta2RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.MostrarVentaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.sp_TipoUSerRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.sp_ValidarUsuarioRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2.TrabajadorMostrarRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.CategoriaTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.ClienteTableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.ClienteTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.DetalleVentaTableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.DetalleVentaTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.ProductoTableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.ProductoTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.TrabajadorTableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.TrabajadorTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.VentaTableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.VentaTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.BuscarDetalleVenta4TableAdapter">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.BuscarCatTableAdapter">
 <summary>
 Represents the connection and commands used to retrieve and save data.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.BuscarClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.BuscarProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.BuscarTrabajadorTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.BuscarVentaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.generar_comprobanteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.MostrarCatTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.MostrarClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.MostrarDetalleVenta2TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.MostrarProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.MostrarVentaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.sp_TipoUSerTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.sp_ValidarUsuarioTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.TrabajadorMostrarTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.QueriesTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager">
 <summary>
 TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
 </summary>
 </member>
-<member name="M:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(SistemaFer.FerreteriasDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(SistemaFer.FerreteriasDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Update rows in top-down order.
 </summary>
 </member>
-<member name="M:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(SistemaFer.FerreteriasDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(SistemaFer.FerreteriasDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Insert rows in top-down order.
 </summary>
 </member>
-<member name="M:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(SistemaFer.FerreteriasDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(SistemaFer.FerreteriasDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Delete rows in bottom-up order.
 </summary>
 </member>
-<member name="M:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<member name="M:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
 <summary>
 Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
 </summary>
 </member>
-<member name="M:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.UpdateAll(SistemaFer.FerreteriasDataSet)">
+<member name="M:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.UpdateAll(SistemaFer.FerreteriasDataSet2)">
 <summary>
 Update all changes to the dataset.
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
 <summary>
 Update Order Option
 </summary>
 </member>
-<member name="T:SistemaFer.FerreteriasDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<member name="T:SistemaFer.FerreteriasDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
 <summary>
 Used to sort self-referenced table's rows
 </summary>

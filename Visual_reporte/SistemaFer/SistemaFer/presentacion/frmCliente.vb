@@ -53,18 +53,6 @@ Public Class frmCliente
 
     End Sub
 
-
-    'Private Sub txtnombres_Validating(sender As Object, e As CancelEventArgs) Handles txtnombres.Validating
-    '    If DirectCast(sender, TextBox).Text.Length > 0 Then
-    '        Me.ErrorIcono.SetError(sender, "")
-    '    Else
-    '        Me.ErrorIcono.SetError(sender, "caja vacia")
-    '    End If
-
-
-    'End Sub
-
-
     Private Sub btnguardar_Click(sender As Object, e As EventArgs) Handles btnguardar.Click
 
         Try
@@ -133,8 +121,6 @@ Public Class frmCliente
 
         End If
 
-
-
     End Sub
 
     Private Sub btnEliminar_Click(sender As Object, e As EventArgs) Handles btnEliminar.Click
@@ -175,7 +161,6 @@ Public Class frmCliente
     Private Sub btncancelar_Click(sender As Object, e As EventArgs) Handles btncancelar.Click
         Me.Close()
 
-
     End Sub
 
 
@@ -188,13 +173,6 @@ Public Class frmCliente
 
     End Sub
 
-    Private Sub Textflag_TextChanged(sender As Object, e As EventArgs) Handles Textflag.TextChanged
-
-    End Sub
-
-    Private Sub datalistado_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles datalistado.CellContentClick
-
-    End Sub
 
     Private Sub txtbuscar_TextChanged(sender As Object, e As EventArgs) Handles txtbuscar.TextChanged
         If txtbuscar.Text <> "" Then
@@ -225,6 +203,10 @@ Public Class frmCliente
 
     End Sub
 
+    Private Sub btnclean_Click(sender As Object, e As EventArgs) Handles btnclean.Click
+        limpiar()
+
+    End Sub
 End Class
 
 

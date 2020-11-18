@@ -47,8 +47,24 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -83,17 +99,10 @@
     <Compile Include="Datos\fTrabajador.vb" />
     <Compile Include="Datos\fUsuario.vb" />
     <Compile Include="Datos\fVenta.vb" />
-    <Compile Include="FerreteriasDataSet.Designer.vb">
+    <Compile Include="FerreteriasDataSet2.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>FerreteriasDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
+      <DependentUpon>FerreteriasDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Logica\vCategoria.vb" />
     <Compile Include="Logica\vcliente.vb" />
@@ -101,12 +110,6 @@
     <Compile Include="Logica\vProducto.vb" />
     <Compile Include="Logica\vTrabajador.vb" />
     <Compile Include="Logica\vVenta.vb" />
-    <Compile Include="LoginForm1.Designer.vb">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm1.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -170,20 +173,14 @@
     <Compile Include="presentacion\LoginForm2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reportes\FrmReporteVenta.Designer.vb">
-      <DependentUpon>FrmReporteVenta.vb</DependentUpon>
+    <Compile Include="Reportes\frmComprobantePago.Designer.vb">
+      <DependentUpon>frmComprobantePago.vb</DependentUpon>
     </Compile>
-    <Compile Include="Reportes\FrmReporteVenta.vb">
+    <Compile Include="Reportes\frmComprobantePago.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm1.resx">
-      <DependentUpon>LoginForm1.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
@@ -214,24 +211,22 @@
     <EmbeddedResource Include="presentacion\LoginForm2.resx">
       <DependentUpon>LoginForm2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\FrmReporteVenta.resx">
-      <DependentUpon>FrmReporteVenta.vb</DependentUpon>
+    <EmbeddedResource Include="Reportes\frmComprobantePago.resx">
+      <DependentUpon>frmComprobantePago.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Reportes\Report1.rdlc">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rdpComprobante.rdlc" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="FerreteriasDataSet.xsc">
-      <DependentUpon>FerreteriasDataSet.xsd</DependentUpon>
+    <None Include="FerreteriasDataSet2.xsc">
+      <DependentUpon>FerreteriasDataSet2.xsd</DependentUpon>
     </None>
-    <None Include="FerreteriasDataSet.xsd">
+    <None Include="FerreteriasDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>FerreteriasDataSet.Designer.vb</LastGenOutput>
+      <LastGenOutput>FerreteriasDataSet2.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="FerreteriasDataSet.xss">
-      <DependentUpon>FerreteriasDataSet.xsd</DependentUpon>
+    <None Include="FerreteriasDataSet2.xss">
+      <DependentUpon>FerreteriasDataSet2.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -242,9 +237,12 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="Resources\clientes.png" />
   </ItemGroup>
   <ItemGroup>
@@ -303,6 +301,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\descarga.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

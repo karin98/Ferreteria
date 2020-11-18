@@ -48,7 +48,7 @@ Public Class frmProducto
 
         End Try
 
-        btneditar.Enabled = False
+        ' btneditar.Enabled = True
 
 
     End Sub
@@ -97,14 +97,12 @@ Public Class frmProducto
                 Dim dts As New vProducto
                 Dim fun As New fproducto
 
+                dts.codprod1 = textcodigoprod.Text
                 dts.NombreProd1 = textnombrep.Text
                 dts.MarcaProd1 = textmarcap.Text
                 dts.PrecioProd1 = textpreciop.Text
-                '  dts.Presentacion1 = textpresentacion.Text
                 dts.StockProd1 = txtStock.Text
                 dts.StockMin1 = TxtstockMin.Text
-
-
 
 
                 If fun.editar(dts) Then

@@ -6,7 +6,7 @@ Public Class conexion
 
     Protected Function conectado()
         Try
-            cnn = New SqlConnection("Data Source=DESKTOP-PVQDUVK\SQLEXPRESS;Initial Catalog=Ferreterias;Integrated Security=True")
+            cnn = New SqlConnection("Data Source=DESKTOP-PVQDUVK\SQLEXPRESS;Initial Catalog=Ferreterias;user id= sa; password = admin123")
             cnn.Open()
             Return True
 
